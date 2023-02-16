@@ -1,0 +1,11 @@
+{
+  "titulo": "Aprende Node.js",
+  "description": "Este curso é um curso legal do FreecodeCamp",
+  "numVistas": 456789,
+  "numLikes": 123456,
+  "temas": [
+    "Javascript",
+    "Node.js"
+  ],
+  "esPublico": true
+}
