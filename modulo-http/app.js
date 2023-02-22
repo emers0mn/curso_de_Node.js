@@ -2,13 +2,21 @@ const http = require('http');
 
 const servidor = http.createServer((req, res) => {
     
-    const info = {
-        nome: 'Emerson',
-        path: 'emerson'
-    };  
-    res.end(info.nome);
+    if(req.url == '/bolo') {
+        const info = {
+            bolo: 'bolo bom da porra',
+            path: 'emerson'
+        };  
+        res.end(info.bolo);
+    } else {
+        const info = {
+            nome: 'Emerson',
+            path: 'emerson'
+        };  
+        res.end(info.nome);
+    };
 
-    console.log(req.headers)
+    console.log(req.url)
 });
 
 const PORTA = 8080;

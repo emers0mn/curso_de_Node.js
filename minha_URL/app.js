@@ -1,0 +1,7 @@
+const minha_URL = new URL('https://www.google.com.ar/search?q=metodos+do+URL&sxsrf=AJOqlzWUQ9H41DoC9e9ca65KG-sbX3cAAQ%3A1677023208220&source=hp&ei=6Ff1Y9X7Crv25OUPtaiPwAI&iflsig=AK50M_UAAAAAY_Vl-Off8xsgo24eln-AMvcun0LDHxPZ&ved=0ahUKEwjVj-qk5qf9AhU7O7kGHTXUAygQ4dUDCAc&uact=5&oq=metodos+do+URL&gs_lcp=Cgdnd3Mtd2l6EAMyBwghEKABEAoyBwghEKABEAo6BAgjECc6BAgAEEM6CgguEMcBENEDEEM6BQgAEIAEOgsILhCABBDHARCvAToOCC4QgAQQxwEQ0QMQ1AI6BQguEIAEOgsILhCABBDHARDRAzoICAAQgAQQywE6CAguEIAEEMsBOgsILhCABBDUAhDLAToHCAAQgAQQCjoJCAAQFhAeEPEEOgsIABAWEB4Q8QQQCjoGCAAQFhAeOgsIABAeEA0Q8QQQCjoLCAAQHhANEA8Q8QQ6CAgAEBYQHhAPOggIABAIEB4QDToLCAAQCBAeEA0Q8QQ6CggAEAgQHhANEApQAFiSEWDdEmgAcAB4AIABowKIAecTkgEFMS44LjWYAQCgAQE&sclient=gws-wiz');
+
+console.log(minha_URL.hostname);
+console.log(minha_URL.pathname);
+console.log(typeof minha_URL.searchParams);
+/// console.log(minha_URL.searchParams);
+console.log(minha_URL.searchParams.get('oq'));
