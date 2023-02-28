@@ -1,8 +1,8 @@
 let receitas = {
-    'bolo': [
+    bolos: [
         /// bolo simples
         {
-            tipo: 'Bolo simples',
+            tipo: 'bolo-simples',
             ingredientes: ['2 xicaras (cha) de acucar', '3 xicaras (cha) de farinha de trigo', '4 colheres (sopa) de margarina', '3 ovos', '1 e 1/2 xicara (cha) de leite', '1 colher (sopa) bem cheia de fermento em po'],
             modo_de_preparo: [
                 'Bata as claras em neve e reserve.', 'Misture as gemas, a margarina e o acucar ate obter uma massa homogênea.', 'Acrescente o leite e a farinha de trigo aos poucos, sem parar de bater.', 'Por último, adicione as claras em neve e o fermento.', 'Despeje a massa em uma forma grande de furo central untada e enfarinhada.', 'Asse em forno médio 180 °C, preaquecido, por aproximadamente 40 minutos ou ao furar o bolo com um garfo, este saia limpo.'
@@ -10,7 +10,7 @@ let receitas = {
         },
         /// bolo de cenoura
         {
-            tipo: 'Bolo de cenoura',
+            tipo: 'bolo-de-cenoura',
             ingredientes: [
                 '1/2 xicara (cha) de oleo',
                 '3 cenouras medias raladas',
