@@ -10,7 +10,7 @@ const servidor = http.createServer((req, res) =>{
     } else if(req.method === 'POST') {
         return pedido_POST(req, res);
     } else{ 
-        res.statusCode = 501;
+        res.writeHead(501);
         res.end(`O método não pode ser utilizado pelo serviro ${req.method}`)
     };
 });
