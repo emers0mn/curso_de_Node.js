@@ -3,11 +3,24 @@ const app = express();
 
 const {receitas} = require('./receitas.js');
 
-app.get('/', (req, res) => {
-    res.send(receitas)
+const rotaReceitas = express.Router();
+app.use('/receitas', rotaReceitas)
+
+rotaReceitas.get('/', (req, res) => {
+    const { bolos } = receitas;
+    
+    if(req.query.tipo) {
+        const tipo = req.query.tipo;
+        const resultado = bolos.filter(bolo => bolo.tipo === tipo);
+        
+        res.json(resultado)
+    }else {
+        res.json(bolos)
+    }
+
 });
 
-app.get('/receitas/:tipo', (req, res) => {
+rotaReceitas.get('/:tipo', (req, res) => {
     const tipo = req.params.tipo || 'default';
     const resultado = receitas.bolos.filter(bolo => bolo.tipo === tipo); /// bolo => é uma função flecha que fiz que bolo vai receber ele e algo se o que está sendo analisando for verdade
 
@@ -15,7 +28,7 @@ app.get('/receitas/:tipo', (req, res) => {
         return res.status(404).send('Deu ruim')
     }
 
-    res.send(resultado);
+    res.json(resultado);
 })
 
 const PORTA = 3200;
