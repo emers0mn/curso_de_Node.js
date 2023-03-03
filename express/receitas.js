@@ -36,6 +36,20 @@ let receitas = {
                 'Despeje em uma tigela a manteiga, o chocolate em po, o acucar e o leite, depois misture.',
                 'Leve a mistura ao fogo e continue misturando ate obter uma consistencia cremosa, depois despeje a calda por cima do bolo.'
             ]
+        },
+        /// bolo de chocolate
+        {
+            tipo: 'bolo-de-chocolate',
+            ingredientes: [
+                '3 ovos',
+                '1 e 1/2 xícara (chá) de açúcar',
+                '2 xícaras (chá) de farinha de trigo',            
+                '1 xícara (chá) de chocolate em pó ou achocolatado',
+                '1/2 xícara (chá) de óleo',            
+                '1 colher (sopa) de fermento em pó',            
+                '1 pitada de sal',
+                '1 xícara (chá) de água quente',
+            ]
         }
     ]
 }
